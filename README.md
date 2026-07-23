@@ -1,6 +1,6 @@
 # Mkweli.tech — personal hub
 
-Personal homepage for **Gilbert Bouic** at [mkweli.tech](https://mkweli.tech).
+Personal homepage for **Gilbert Clement Bouic** at [mkweli.tech](https://mkweli.tech).
 
 Product sites live on subdomains:
 
