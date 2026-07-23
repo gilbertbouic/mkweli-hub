@@ -29,7 +29,9 @@
   onScroll();
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const targets = document.querySelectorAll(".work-card, .about-copy, .contact-panel");
+  const targets = document.querySelectorAll(
+    ".work-card, .about-copy, .contact-panel, .mission-card, .timeline li"
+  )
 
   if (reduceMotion) {
     targets.forEach((el) => el.classList.add("visible"));
