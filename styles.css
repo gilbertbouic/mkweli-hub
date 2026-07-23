@@ -410,38 +410,140 @@ a:hover {
   font-size: 1.05rem;
 }
 
-/* ---------- Mission ---------- */
-.mission {
-  padding-top: 2rem;
+/* ---------- Hero stats ---------- */
+.hero-stats {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
-.mission-grid {
+.hero-stats li {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-stats strong {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.hero-stats span {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* ---------- Services ---------- */
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.mission-card {
+.service-card {
   padding: 1.5rem;
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.mission-card h3 {
-  margin: 0 0 0.75rem;
+.service-card:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.service-card h3 {
+  margin: 0 0 0.65rem;
   font-size: 1.1rem;
   color: var(--gold-soft);
 }
 
-.mission-card p {
+.service-card p {
   margin: 0;
   color: var(--text-muted);
   font-size: 0.98rem;
 }
 
-.mission-card strong {
-  color: var(--text);
+/* ---------- Skills ---------- */
+.skills {
+  background: linear-gradient(180deg, transparent, rgba(13, 20, 36, 0.55) 40%, transparent);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.skill-block {
+  padding: 1.35rem;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.skill-block h3 {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  color: var(--blue-bright);
+  letter-spacing: 0.02em;
+}
+
+.skill-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-block li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 0.95rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.skill-block li:last-child {
+  border-bottom: 0;
+}
+
+.skill-block li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.tech-line {
+  margin: 0 !important;
+  font-size: 0.82rem !important;
+  color: var(--text-dim) !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.about-secondary {
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem !important;
+  color: var(--text-dim) !important;
+}
+
+.path-compact {
+  padding-top: 2.5rem;
 }
 
 /* ---------- About ---------- */
@@ -901,12 +1003,22 @@ a:hover {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .about-grid,
   .work-grid,
   .footer-grid,
-  .mission-grid {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
     grid-template-columns: 1fr;
   }
 
@@ -949,6 +1061,10 @@ a:hover {
     padding: 3.5rem 0;
   }
 
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-actions {
     flex-direction: column;
     align-items: stretch;
@@ -956,6 +1072,12 @@ a:hover {
 
   .contact-actions .btn {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card:hover {
+    transform: none;
   }
 }
 

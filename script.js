@@ -30,8 +30,8 @@
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const targets = document.querySelectorAll(
-    ".work-card, .about-copy, .contact-panel, .mission-card, .timeline li"
-  )
+    ".work-card, .about-copy, .contact-panel, .service-card, .skill-block, .timeline li"
+  );
 
   if (reduceMotion) {
     targets.forEach((el) => el.classList.add("visible"));
