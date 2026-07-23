@@ -7,6 +7,8 @@ Target map:
 | `mkweli.tech` | Personal hub | this repo (`mkweli-hub`) |
 | `aml.mkweli.tech` | Mkweli AML product | `mkweli-website` |
 | `lakazagri.mkweli.tech` | LakazAgri product | `lakazagri-website` (unchanged) |
+| `ceb.mkweli.tech` | CEB Rodrigues Field | `ceb-website` |
+| `xlhighwaytravel.co.za` | Client (external) | WordPress — not on mkweli DNS |
 
 ## Before you start
 

@@ -464,6 +464,45 @@ a:hover {
   gap: 1.5rem;
 }
 
+.work-media-dark {
+  background: #071e2e;
+  display: grid;
+  place-items: center;
+}
+
+.work-media-dark img {
+  object-fit: contain;
+  max-height: 70%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.work-media-light {
+  background: #f5f5f5;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.work-media-contain {
+  object-fit: contain !important;
+  max-height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.work-logo-rect {
+  border-radius: 6px !important;
+  object-fit: contain;
+  background: #fff;
+}
+
+.work-badge-client {
+  color: var(--gold-soft) !important;
+  background: rgba(212, 175, 106, 0.12) !important;
+  border-color: rgba(212, 175, 106, 0.3) !important;
+}
+
 .work-card {
   display: flex;
   flex-direction: column;
