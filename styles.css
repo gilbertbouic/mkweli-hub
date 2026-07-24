@@ -898,6 +898,18 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+.work-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.work-actions .btn {
+  margin-top: 0;
+}
+
 /* ---------- Contact ---------- */
 .contact {
   padding-bottom: 5.5rem;
