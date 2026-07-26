@@ -8,6 +8,7 @@ Target map:
 | `aml.mkweli.tech` | Mkweli AML product | `mkweli-website` |
 | `lakazagri.mkweli.tech` | LakazAgri product | `lakazagri-website` (unchanged) |
 | `ceb.mkweli.tech` | CEB Rodrigues Field | `ceb-website` |
+| `climate-fund-watch.vercel.app` | Climate Fund Watch (Phase C demo) | `climate-fund-watch` (`web/`) — optional later: `cfw.mkweli.tech` CNAME |
 | `xlhighwaytravel.co.za` | Client (external) | WordPress — not on mkweli DNS |
 
 ## Before you start
