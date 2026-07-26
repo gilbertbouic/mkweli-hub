@@ -8,7 +8,20 @@ Target map:
 | `aml.mkweli.tech` | Mkweli AML product | `mkweli-website` |
 | `lakazagri.mkweli.tech` | LakazAgri product | `lakazagri-website` (unchanged) |
 | `ceb.mkweli.tech` | CEB Rodrigues Field | `ceb-website` |
-| `climate-fund-watch.vercel.app` | Climate Fund Watch (Phase C demo) | `climate-fund-watch` (`web/`) — optional later: `cfw.mkweli.tech` CNAME |
+| `cfw.mkweli.tech` | Climate Fund Watch (Phase C demo) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
+| `climate-fund-watch.vercel.app` | CFW fallback URL | Same Vercel project |
+
+### Climate Fund Watch DNS (Hostinger)
+
+The subdomain must point at **Vercel**, not GitHub Pages:
+
+| Type | Name | Value | Notes |
+|------|------|-------|-------|
+| CNAME | `cfw` | `387144dd2c20d5a7.vercel-dns-017.com` | Replace any `gilbertbouic.github.io` target |
+
+Alternatively: `A` record for `cfw` → `76.76.21.21` (Vercel).
+
+Contact: `gilbert@mkweli.tech` · form on https://cfw.mkweli.tech/get-involved
 | `xlhighwaytravel.co.za` | Client (external) | WordPress — not on mkweli DNS |
 
 ## Before you start
