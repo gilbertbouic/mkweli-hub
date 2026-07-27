@@ -1,37 +1,39 @@
 (() => {
+  "use strict";
+
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  const toggle = document.querySelector(".nav-toggle");
-  const mobileNav = document.getElementById("mobile-nav");
-  if (toggle && mobileNav) {
+  const header = document.querySelector(".site-header");
+  const nav = document.getElementById("primary-nav");
+  const toggle = document.getElementById("nav-toggle");
+
+  const onScroll = () => {
+    if (!header) return;
+    header.classList.toggle("scrolled", window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  if (toggle && nav) {
     toggle.addEventListener("click", () => {
       const open = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!open));
-      mobileNav.hidden = open;
+      nav.classList.toggle("open", !open);
+      toggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
     });
 
-    mobileNav.querySelectorAll("a").forEach((link) => {
+    nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        mobileNav.hidden = true;
         toggle.setAttribute("aria-expanded", "false");
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-label", "Open menu");
       });
     });
   }
 
-  const header = document.querySelector(".site-header");
-  const onScroll = () => {
-    if (!header) return;
-    header.style.boxShadow =
-      window.scrollY > 8 ? "0 8px 30px rgba(0,0,0,0.35)" : "none";
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const targets = document.querySelectorAll(
-    ".work-card, .about-copy, .contact-panel, .service-card, .skill-block, .timeline li"
-  );
+  const targets = document.querySelectorAll(".product-card, .pillar, .who-list li, .contact-card");
 
   if (reduceMotion) {
     targets.forEach((el) => el.classList.add("visible"));

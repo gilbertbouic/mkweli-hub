@@ -1,11 +1,18 @@
-# Mkweli.tech — personal hub
+# Mkweli.tech — product hub
 
-Personal homepage for **Gilbert Clement Bouic** at [mkweli.tech](https://mkweli.tech).
+Main landing site for **Mkweli** products at [mkweli.tech](https://mkweli.tech).
 
-Product sites live on subdomains:
+This is a **product catalog / studio front door**, not a personal portfolio. Founder and CV-style detail live on [`about.html`](./about.html).
 
-- [aml.mkweli.tech](https://aml.mkweli.tech) — Mkweli AML
-- [lakazagri.mkweli.tech](https://lakazagri.mkweli.tech) — LakazAgri
+## Products
+
+| Product | URL |
+|---------|-----|
+| Mkweli AML | https://aml.mkweli.tech |
+| LakazAgri | https://lakazagri.mkweli.tech · https://lakazagri.mu |
+| Climate Fund Watch | https://cfw.mkweli.tech |
+| CEB Rodrigues Field | https://ceb.mkweli.tech |
+| Assimilate Pro | https://assimilate-pro.mkweli.tech |
 
 ## Stack
 
@@ -14,15 +21,12 @@ Static HTML / CSS / JS on **GitHub Pages**. No build step.
 ## Local preview
 
 ```bash
-# from this directory
 python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
 ## Deploy
 
-1. Push `main` to this repo.
-2. GitHub → **Settings → Pages** → Deploy from branch `main` / root.
-3. Custom domain cutover is documented in [`DNS-CUTOVER.md`](./DNS-CUTOVER.md).
+Push `main`. Pages deploys from branch `main` / root. Custom domain: `mkweli.tech` (see `CNAME`).
 
-Do **not** add a `CNAME` file for `mkweli.tech` until Hostinger DNS is ready and the AML site has moved to `aml.mkweli.tech`.
+Contact: **gilbert@mkweli.tech**
