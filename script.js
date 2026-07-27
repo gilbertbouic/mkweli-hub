@@ -1,8 +1,27 @@
 (() => {
   "use strict";
 
+  const root = document.documentElement;
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* Theme: system default, user override in localStorage */
+  const stored = localStorage.getItem("mkweli-theme");
+  if (stored === "light" || stored === "dark") {
+    root.setAttribute("data-theme", stored);
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current =
+        root.getAttribute("data-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("mkweli-theme", next);
+    });
+  }
 
   const header = document.querySelector(".site-header");
   const nav = document.getElementById("primary-nav");
