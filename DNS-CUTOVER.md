@@ -85,7 +85,7 @@ At this moment the apex may stop serving the old AML site. Proceed immediately t
 
 ## Aftercare
 
-- Update LinkedIn, email signature, WhatsApp blurbs, and any one-pagers to `aml.mkweli.tech` for the app.
+- Update email signature, WhatsApp blurbs, and any one-pagers to `aml.mkweli.tech` for the app.
 - Old deep links like `https://mkweli.tech/Mkweli_v1.0.8.apk` will break after cutover (expected). New URL: `https://aml.mkweli.tech/Mkweli_v1.0.8.apk` (or current APK name).
 - Optional later: Cloudflare 301s if residual traffic to old product URLs is high.
 - Disconnect Carrd custom domain if it still expects `mkweli.tech`.
