@@ -6,7 +6,9 @@ Target map:
 |------|------|------|
 | `mkweli.tech` | Personal hub | this repo (`mkweli-hub`) |
 | `aml.mkweli.tech` | Mkweli AML product | `mkweli-website` |
-| `lakazagri.mkweli.tech` | LakazAgri product | `lakazagri-website` (unchanged) |
+| `lakazagri.mkweli.tech` | LakazAgri marketing | `lakazagri-website` (GitHub Pages) |
+| `app.mkweli.tech` | LakazAgri web SaaS | Hetzner VPS `95.217.154.172` |
+| `api.mkweli.tech` | LakazAgri production API | Hetzner VPS `95.217.154.172` (nginx → Node) |
 | `ceb.mkweli.tech` | CEB Rodrigues Field | `ceb-website` |
 | `cfw.mkweli.tech` | Climate Fund Watch (Phase C demo) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
 | `climate-fund-watch.vercel.app` | CFW fallback URL | Same Vercel project |
