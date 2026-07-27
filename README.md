@@ -29,4 +29,4 @@ python3 -m http.server 8080
 
 Push `main`. Pages deploys from branch `main` / root. Custom domain: `mkweli.tech` (see `CNAME`).
 
-Contact: **gilbert@mkweli.tech**
+Contact: **support@mkweli.tech**
