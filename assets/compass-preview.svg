@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3e6cf"/>
+      <stop offset="100%" stop-color="#c9a06a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#g)"/>
+  <ellipse cx="330" cy="210" rx="240" ry="120" fill="#8E0D1A" opacity=".88"/>
+  <ellipse cx="210" cy="150" rx="70" ry="40" fill="#AB2B2B"/>
+  <circle cx="430" cy="150" r="10" fill="#FB7F18" stroke="#1B7A3D" stroke-width="3"/>
+  <circle cx="280" cy="230" r="10" fill="#1B7A3D" stroke="#FB7F18" stroke-width="3"/>
+  <circle cx="360" cy="200" r="10" fill="#d68910" stroke="#8a8178" stroke-width="3"/>
+  <text x="32" y="48" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#8E0D1A">XL Compass</text>
+  <text x="32" y="74" font-family="system-ui,sans-serif" font-size="14" fill="#6b6560">Outbound packages · a Mkweli product</text>
+</svg>
