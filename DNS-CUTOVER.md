@@ -9,7 +9,8 @@ Target map:
 | `lakazagri.mkweli.tech` | LakazAgri marketing | `lakazagri-website` (GitHub Pages) |
 | `app.mkweli.tech` | LakazAgri web SaaS | Hetzner VPS `95.217.154.172` |
 | `api.mkweli.tech` | LakazAgri production API | Hetzner VPS `95.217.154.172` (nginx → Node) |
-| `ceb.mkweli.tech` | Mkweli Grid | `ceb-website` |
+| `grid.mkweli.tech` | Mkweli Grid | `ceb-website` |
+| `ceb.mkweli.tech` | Redirect to grid (legacy) | Hostinger URL redirect → `grid.mkweli.tech` |
 | `cfw.mkweli.tech` | Climate Fund Watch (Phase C demo) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
 | `climate-fund-watch.vercel.app` | CFW fallback URL | Same Vercel project |
 
@@ -42,6 +43,7 @@ Domains → `mkweli.tech` → DNS:
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
 | CNAME | `aml` | `gilbertbouic.github.io` | 3600 |
+| CNAME | `grid` | `gilbertbouic.github.io` | 3600 |
 
 Keep existing apex **A** records pointing at GitHub Pages:
 

@@ -11,7 +11,7 @@ This is a **product catalog / studio front door**, not a personal portfolio. Fou
 | Mkweli AML | https://aml.mkweli.tech |
 | LakazAgri | Marketing [lakazagri.mkweli.tech](https://lakazagri.mkweli.tech) · Web [app.mkweli.tech](https://app.mkweli.tech) · API [api.mkweli.tech](https://api.mkweli.tech) |
 | Climate Fund Watch | https://cfw.mkweli.tech |
-| Mkweli Grid | https://ceb.mkweli.tech |
+| Mkweli Grid | https://grid.mkweli.tech |
 | Assimilate Pro | https://assimilate-pro.mkweli.tech |
 
 ## Stack
