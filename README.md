@@ -2,7 +2,7 @@
 
 Main landing site for **Mkweli** products at [mkweli.tech](https://mkweli.tech).
 
-This is a **product catalog / studio front door**, not a personal portfolio. Founder and CV-style detail live on [`about.html`](./about.html).
+This is a **product catalog / studio front door**. Client websites (vitrine, business site, custom) live on [`websites.html`](./websites.html) (EN) and [`sites.html`](./sites.html) (FR). Founder detail lives on [`about.html`](./about.html).
 
 ## Products
 

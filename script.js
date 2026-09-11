@@ -52,7 +52,9 @@
   }
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const targets = document.querySelectorAll(".product-card, .pillar, .who-list li, .contact-card");
+  const targets = document.querySelectorAll(
+    ".product-card, .pillar, .who-list li, .contact-card, .pkg, .work-card, .step-card, .web-teaser"
+  );
 
   if (reduceMotion) {
     targets.forEach((el) => el.classList.add("visible"));
