@@ -11,7 +11,7 @@ Target map:
 | `api.mkweli.tech` | LakazAgri production API | Hetzner VPS `95.217.154.172` (nginx → Node) |
 | `grid.mkweli.tech` | Mkweli Grid | `ceb-website` |
 | `ceb.mkweli.tech` | Redirect to grid (legacy) | Hostinger URL redirect → `grid.mkweli.tech` |
-| `cfw.mkweli.tech` | Climate Fund Watch (Phase C demo) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
+| `cfw.mkweli.tech` | Climate Fund Watch (sourced public ledger) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
 | `climate-fund-watch.vercel.app` | CFW fallback URL | Same Vercel project |
 
 ### Climate Fund Watch DNS (Hostinger)
