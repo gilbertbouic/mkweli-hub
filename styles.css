@@ -734,7 +734,7 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 }
 .pkg ul li { padding-left: 1.05rem; position: relative; }
 .pkg ul li::before {
-  content: "–";
+  content: "-";
   position: absolute;
   left: 0;
   color: var(--brand-orange);
