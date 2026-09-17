@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+Disallow: /README.md
+Disallow: /DNS-CUTOVER.md
+Disallow: /CNAME
+Disallow: /scripts/
+
 Sitemap: https://mkweli.tech/sitemap.xml

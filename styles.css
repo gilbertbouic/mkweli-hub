@@ -584,6 +584,25 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 .contact-actions .btn { width: 100%; }
 
 .page-about h1 { margin-top: 0.35rem; }
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(10rem, 14rem) 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 52rem;
+}
+.founder-photo {
+  margin: 0;
+}
+.founder-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  object-fit: cover;
+  aspect-ratio: 653 / 753;
+}
 .simple-list {
   list-style: none;
   display: flex;
@@ -856,7 +875,9 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
   .pkg-grid,
   .work-grid,
   .process-grid,
-  .web-teaser { grid-template-columns: 1fr; }
+  .web-teaser,
+  .founder-grid { grid-template-columns: 1fr; }
+  .founder-photo { max-width: 16rem; }
   .hero-meta { grid-template-columns: 1fr; }
 }
 
