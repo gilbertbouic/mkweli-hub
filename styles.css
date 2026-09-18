@@ -811,6 +811,51 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 .work-card-body { padding: 1.15rem 1.25rem 1.3rem; display: flex; flex-direction: column; flex: 1; }
 .work-card-body p { font-size: 0.92rem; flex: 1; }
 
+.client-note {
+  margin: 2rem 0 0;
+  max-width: 46rem;
+  padding: 1.35rem 1.4rem 1.4rem 1.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand-orange);
+  border-radius: var(--radius);
+}
+.client-note .section-tag { margin-bottom: 0.55rem; }
+.client-note blockquote { margin: 0; }
+.client-note blockquote p {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0 0 0.9rem;
+}
+.client-note footer {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pull-quote {
+  margin: 1rem 0 1.15rem;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid var(--brand-orange);
+}
+.pull-quote p {
+  font-family: var(--display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--text);
+  margin: 0 0 0.4rem;
+}
+.pull-quote footer {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.pull-quote .text-link { font-size: 0.82rem; }
+
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
