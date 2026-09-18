@@ -1,4 +1,4 @@
-# Mkweli.tech — product hub
+# Mkweli.tech - product hub
 
 Main landing site for **Mkweli** products at [mkweli.tech](https://mkweli.tech).
 

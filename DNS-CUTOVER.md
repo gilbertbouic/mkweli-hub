@@ -25,7 +25,7 @@ The subdomain must point at **Vercel**, not GitHub Pages:
 Alternatively: `A` record for `cfw` → `76.76.21.21` (Vercel).
 
 Contact: `gilbert@mkweli.tech` · form on https://cfw.mkweli.tech/get-involved
-| `xlhighwaytravel.co.za` | Client (external) | WordPress — not on mkweli DNS |
+| `xlhighwaytravel.co.za` | Client (external) | WordPress - not on mkweli DNS |
 
 ## Before you start
 
@@ -34,7 +34,7 @@ Contact: `gilbert@mkweli.tech` · form on https://cfw.mkweli.tech/get-involved
 - [ ] **Do not remove** Hostinger MX / SPF (email `gilbert@mkweli.tech`)
 - [ ] Rotate any passwords that lived in local notes (`website hostinger.odt`)
 
-## Phase B — Stand up AML on the subdomain first
+## Phase B - Stand up AML on the subdomain first
 
 ### 1. Hostinger DNS
 
@@ -69,7 +69,7 @@ Optional:
 
 At this moment the apex may stop serving the old AML site. Proceed immediately to Phase C.
 
-## Phase C — Point apex at the hub
+## Phase C - Point apex at the hub
 
 ### 1. This repo (`mkweli-hub`)
 
@@ -81,10 +81,10 @@ At this moment the apex may stop serving the old AML site. Proceed immediately t
 
 ### 2. Smoke-test checklist
 
-- [ ] `https://mkweli.tech` — personal hub
+- [ ] `https://mkweli.tech` - personal hub
 - [ ] Hub links open `aml.` and `lakazagri.`
-- [ ] `https://aml.mkweli.tech` — product + APK
-- [ ] `https://lakazagri.mkweli.tech` — unchanged
+- [ ] `https://aml.mkweli.tech` - product + APK
+- [ ] `https://lakazagri.mkweli.tech` - unchanged
 - [ ] Email still works to `gilbert@mkweli.tech`
 
 ## Aftercare
