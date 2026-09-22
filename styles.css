@@ -789,7 +789,7 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.1rem;
 }
 .work-card {

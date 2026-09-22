@@ -20,6 +20,7 @@ This is a **product catalog / studio front door**. English and French twins:
 | Climate Fund Watch | https://cfw.mkweli.tech |
 | Mkweli Grid | https://grid.mkweli.tech |
 | Assimilate Pro | https://assimilate-pro.mkweli.tech |
+| Village Grid | https://honesty.mkweli.tech |
 
 ## Stack
 
