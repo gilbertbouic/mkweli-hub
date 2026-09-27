@@ -100,7 +100,7 @@ html[data-theme="dark"] {
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; color-scheme: light dark; }
+html { scroll-behavior: smooth; color-scheme: light dark; overflow-x: clip; }
 body {
   margin: 0;
   font-family: var(--font);
@@ -108,6 +108,7 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: var(--bg);
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; height: auto; display: block; }
@@ -303,8 +304,8 @@ html[data-theme="light"] .logo-dark { display: none; }
 .lang-switch a[aria-current="true"] { background: var(--bg-soft); }
 .nav-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--line-strong);
   border-radius: 12px;
   background: var(--bg-elevated);
@@ -789,7 +790,7 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 1.1rem;
 }
 .work-card {
