@@ -8,7 +8,6 @@ This is a **product catalog / studio front door**. English and French twins:
 |----|----|
 | [`index.html`](./index.html) `/` | [`accueil.html`](./accueil.html) |
 | [`websites.html`](./websites.html) | [`sites.html`](./sites.html) |
-| [`about.html`](./about.html) | [`a-propos.html`](./a-propos.html) |
 | [`privacy.html`](./privacy.html) | [`confidentialite.html`](./confidentialite.html) |
 
 ## Products

@@ -62,8 +62,6 @@
     "/accueil.html": { en: "/", fr: "/accueil.html" },
     "/websites.html": { en: "/websites.html", fr: "/sites.html" },
     "/sites.html": { en: "/websites.html", fr: "/sites.html" },
-    "/about.html": { en: "/about.html", fr: "/a-propos.html" },
-    "/a-propos.html": { en: "/about.html", fr: "/a-propos.html" },
     "/privacy.html": { en: "/privacy.html", fr: "/confidentialite.html" },
     "/confidentialite.html": { en: "/privacy.html", fr: "/confidentialite.html" },
   };
