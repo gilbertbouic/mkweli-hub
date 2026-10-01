@@ -98,4 +98,52 @@
     );
     targets.forEach((el) => io.observe(el));
   }
+
+  if (themeToggle) {
+    const syncPressed = () => {
+      const mode =
+        root.getAttribute("data-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      themeToggle.setAttribute("aria-pressed", mode === "dark" ? "true" : "false");
+    };
+    syncPressed();
+    themeToggle.addEventListener("click", () => {
+      window.setTimeout(syncPressed, 0);
+    });
+  }
+
+  const notify = document.getElementById("tool-notify");
+  if (notify) {
+    const input = notify.querySelector("input[type='email']");
+    const error = document.getElementById("notify-error");
+    notify.addEventListener("submit", (event) => {
+      const value = (input && input.value.trim()) || "";
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      if (!ok) {
+        event.preventDefault();
+        if (input) input.setAttribute("aria-invalid", "true");
+        if (error) {
+          error.hidden = false;
+          error.textContent = document.documentElement.lang === "fr"
+            ? "Indiquez une adresse e-mail valide."
+            : "Enter a valid email address.";
+        }
+        if (input) input.focus();
+        return;
+      }
+      if (input) input.removeAttribute("aria-invalid");
+      if (error) error.hidden = true;
+      if (notify.action.indexOf("TODO") !== -1) {
+        event.preventDefault();
+        const subject = document.documentElement.lang === "fr"
+          ? "Avis sur les outils Mkweli"
+          : "Mkweli tool updates";
+        window.location.href =
+          "mailto:support@mkweli.tech?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(value);
+      }
+    });
+  }
 })();
