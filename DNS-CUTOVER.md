@@ -11,20 +11,13 @@ Target map:
 | `api.mkweli.tech` | LakazAgri production API | Hetzner VPS `95.217.154.172` (nginx → Node) |
 | `grid.mkweli.tech` | Mkweli Grid | `ceb-website` |
 | `ceb.mkweli.tech` | Redirect to grid (legacy) | Hostinger URL redirect → `grid.mkweli.tech` |
-| `cfw.mkweli.tech` | Climate Fund Watch (sourced public ledger) | GitHub `gilbertbouic/cfw` · Vercel project `climate-fund-watch` |
-| `climate-fund-watch.vercel.app` | CFW fallback URL | Same Vercel project |
+| `pfw.mkweli.tech` | Public Funds Watch (sourced public ledger) | GitHub `gilbertbouic/pfw` · GitHub Pages |
 
-### Climate Fund Watch DNS (Hostinger)
+### Public Funds Watch DNS (Hostinger)
 
-The subdomain must point at **Vercel**, not GitHub Pages:
+`pfw` is a CNAME to `gilbertbouic.github.io`. Do not recreate `cfw.mkweli.tech`, and do not point this site at Vercel.
 
-| Type | Name | Value | Notes |
-|------|------|-------|-------|
-| CNAME | `cfw` | `387144dd2c20d5a7.vercel-dns-017.com` | Replace any `gilbertbouic.github.io` target |
-
-Alternatively: `A` record for `cfw` → `76.76.21.21` (Vercel).
-
-Contact: `gilbert@mkweli.tech` · form on https://cfw.mkweli.tech/get-involved
+Contact: `support@mkweli.tech` · form on https://pfw.mkweli.tech/get-involved
 | `xlhighwaytravel.co.za` | Client (external) | WordPress - not on mkweli DNS |
 
 ## Before you start
