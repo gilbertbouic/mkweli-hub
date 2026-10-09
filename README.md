@@ -17,7 +17,7 @@ This is a **product catalog / studio front door**. English and French twins:
 | Mkweli AML | https://aml.mkweli.tech |
 | LakazAgri | Marketing [lakazagri.mkweli.tech](https://lakazagri.mkweli.tech) · Web [app.mkweli.tech](https://app.mkweli.tech) · API [api.mkweli.tech](https://api.mkweli.tech) |
 | Public Funds Watch | https://pfw.mkweli.tech |
-| Assimilate Pro | https://assimilate-pro.mkweli.tech |
+| Assimilate Pro | https://assimilate-pro.mkweli.tech · Android [2.3.2](https://github.com/gilbertbouic/assimilate-pro/releases/tag/v2.3.2) (new signing key: uninstall older versions first) |
 | Village Grid | https://honesty.mkweli.tech |
 
 ## Stack
