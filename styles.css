@@ -1066,3 +1066,12 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
 @media (max-width: 560px) {
   .who-card { grid-template-columns: 1fr; }
 }
+
+/* Personal by-line under the founder profile */
+.who-byline {
+  font-size: 0.92rem;
+  color: var(--muted, inherit);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+.who-byline a { text-decoration: underline; text-underline-offset: 2px; }
