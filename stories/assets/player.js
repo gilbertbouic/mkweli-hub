@@ -2,6 +2,7 @@
 const $=id=>document.getElementById(id);
 const ST=window.STORY, S=ST.scenes, PAUSE=800, GLOSS=ST.glossary||{};
 document.title=ST.title+" · Mkweli Stories";
+if(ST.aspect){const fr=document.querySelector(".frame");if(fr)fr.style.aspectRatio=ST.aspect;}
 if(ST.bookUrl){[$("booklink"),$("morelink")].forEach(a=>{a.href=ST.bookUrl;a.target="_top";});}
 const audio=$("audio"), text=$("text"), playB=$("play");
 let i=0, playing=false, spans=[], timer=null, raf=null, front=$("imA"), back=$("imB");
