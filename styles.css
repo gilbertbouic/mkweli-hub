@@ -1075,3 +1075,11 @@ html[data-theme="dark"] .badge-demo { background: rgba(255,255,255,0.08); }
   margin-top: 0.25rem;
 }
 .who-byline a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* Small visit counter in the footer */
+.footer-bottom .visit-counter {
+  font-size: 0.78rem;
+  color: var(--footer-muted);
+  opacity: 0.85;
+  font-variant-numeric: tabular-nums;
+}
